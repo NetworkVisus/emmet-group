@@ -1,0 +1,5 @@
+.hero {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  background-color: var(--green-brand-color);
+}
