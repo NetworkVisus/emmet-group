@@ -39,3 +39,11 @@ body {
   color: var(--primary-text-color);
   background-color: var(--white-color);
 }
+
+.container {
+  width: 100%;
+  max-width: 365px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
