@@ -44,6 +44,10 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-shadow: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-nav-link:hover, .footer-nav-link:focus {
+  color: var(--green-brand-color);
 }
 .footer-contact-wrap {
   text-align: center;
@@ -77,6 +81,10 @@
   font-size: 18px;
   line-height: 1.33;
   text-shadow: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-tel-link:hover, .footer-tel-link:focus {
+  color: var(--green-brand-color);
 }
 .footer-address-list {
   margin-top: 20px;
@@ -93,7 +101,8 @@
     gap: 170px;
   }
   .footer-soc-list {
-    margin-bottom: 42px;
+    margin-bottom: 42px;    
+    justify-content: unset;
   }
   .footer-contact-wrap {
     text-align: left;
