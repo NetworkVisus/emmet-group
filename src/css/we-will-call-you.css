@@ -1,3 +1,238 @@
 .we-will-call-you {
-  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.container{
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px 0 20px;
+}
+.we-will-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.we-will-title {
+  text-align: center;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 24px;
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -0.96px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.we-will-paragraf {
+  text-align: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  color: var(--primary-text-color);
+}
+
+.container-input{
+  position: relative;
+}
+
+.we-will-form {
+  
+}
+
+.input-button{
+  color: var(--white-color);
+  border-radius: 100px;
+  background-color: var(--button-orange-color);
+  padding: 15px 35px;
+  position: absolute;
+  right: 0;
+  border: 0;
+}
+
+
+.we-will-input {
+  padding-left: 24px;
+  width: 335px;
+  height: 48px;
+  position: relative;
+  border-radius: 100px;
+    border: 1px solid #141414;
+    opacity: 0.30000001192092896;
+}
+
+.img-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img-container {
+  padding-top: 31px;
+  border-radius: 40px;
+    background: #FAF3E7;
+  background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
+  background-size: 45px 45px;
+}
+
+.img-block3{
+  display: none;
+}
+
+.img-block2{
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container{
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .we-will-call-you {
+  }
+
+  .we-will-input{
+    width: 350px;
+  }
+  .we-will-container{
+    width: 524px;
+    padding-top: 100px;
+  }
+
+  .we-will-title{
+    font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 44px;
+      letter-spacing: -1.6px;
+      text-transform: uppercase;
+  }
+
+  .we-will-paragraf{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    margin: 0;
+  }
+
+    .img-block{
+      display: none;
+    }
+
+    .img-block3{
+      display: none;
+    }
+    .img-block2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 173px;
+    }
+  
+    .img-container{
+      display: none;
+    }
+
+    .img-container3{
+      display: none;
+    }
+    .img-container2 {
+      padding-top: 17px;
+      padding-left: 37px;
+      padding-right: 38px;
+      border-radius: 40px;
+      background: #FAF3E7;
+      background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
+      background-size: 45px 45px;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+  .we-will-call-you{
+    flex-direction: row;
+
+  }
+
+  .we-will-container{
+    justify-content: start;
+    align-items: start;
+    margin-right: 77px;
+        gap: 40px;
+  }
+
+  .we-will-title{
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    width: 614px;
+  }
+
+  .we-will-paragraf{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    text-align: left;
+    margin: 0;
+    width: 523px;
+  }
+  .container {
+      max-width: 1280px;
+  }
+
+  .input-container{
+    justify-content: start;
+    align-items: start;
+  }
+    .img-block{
+    display: none;
+  }
+
+  .img-block2{
+    display: none;
+  }
+    .img-block3{
+    display: flex;
+    padding: 124px 0;
+  }
+
+  .img-container3 {
+  padding-top: 37px;
+  border-radius: 40px;
+    background: #FAF3E7;
+  background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
+  background-size: 45px 45px;
+}
+
+
+}
+
+
+
