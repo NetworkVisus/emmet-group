@@ -1,5 +1,187 @@
 .hero {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 20px;
   background-color: var(--green-brand-color);
+
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+.hero-reviews {
+  display: flex;
+  position: relative;
+
+  margin-bottom: 58px;
+}
+.hero-reviews-img {
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 2px solid var(--white-color);
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  position: absolute;
+}
+.hero-reviews-img:nth-child(1) {
+  z-index: 1;
+}
+
+.hero-reviews-img:nth-child(2) {
+  z-index: 2;
+  margin-left: 28px;
+}
+
+.hero-reviews-img:nth-child(3) {
+  z-index: 3;
+  margin-left: 56px;
+}
+
+.hero-reviews-img:nth-child(4) {
+  z-index: 4;
+  margin-left: 84px;
+}
+
+.hero-reviews-p {
+  color: var(--primary-text-color);
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 8px;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+.span-revievs {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  text-transform: none;
+}
+.hero-title {
+  color: var(--white-color);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+@media (max-width: 320px) {
+  .hero-title {
+    font-size: 34px;
+  }
+}
+.span-hero-title {
+  color: var(--light-green-color);
+  font-style: italic;
+}
+.hero-p {
+  color: var(--white-color);
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  margin-bottom: 20px;
+}
+.hero-shop-now {
+  background: var(--primary-background-color);
+  color: var(--button-orange-color);
+  text-align: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  width: 68px;
+  height: 68px;
+  border: none;
+
+  transform: rotate(-14deg);
+  border-radius: 50%;
+
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 3px;
+  gap: 10px;
+
+  margin-bottom: 36px;
+}
+.hero-shop-now-div {
+  transform: rotate(0);
+  margin-bottom: 8px;
+}
+
+.hero-main-img {
+  background-color: var(--primary-background-color);
+  border-radius: 500px;
+  transform: rotate(-14deg);
+  margin-left: auto;
+  margin-right: auto;
+  height: 186px;
+  width: 280px;
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.hero-girl {
+  background-color: transparent;
+  transform: rotate(14deg) translateY(-30px);
+  margin-left: auto;
+  margin-right: auto;
+
+  clip-path: polygon(
+    100% 0,
+    100% 76%,
+    89% 84%,
+    77% 89.3%,
+    64% 93%,
+    40% 98%,
+    22.5% 100%,
+    9% 96%,
+    0 89%,
+    0 0
+  );
+}
+
+.hero-button-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  gap: 4px;
+}
+
+.hero-button-filters {
+  padding: 8px 14px;
+
+  gap: 10px;
+  background-color: transparent;
+
+  border-radius: 1000px;
+  border: 1px solid var(--white-color);
+
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.current {
+  color: var(--primary-text-color);
+  background-color: #f9f7f4;
+}
+.current::after {
+  color: var(--primary-text-color);
+  background-color: #f9f7f4;
 }
