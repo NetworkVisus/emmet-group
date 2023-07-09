@@ -3,12 +3,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-.container{
-  width: 100%;
-  max-width: 375px;
-  padding: 0 20px 0 20px;
-}
 .we-will-container {
   display: flex;
   flex-direction: column;
@@ -91,7 +85,7 @@
 .img-container {
   padding-top: 31px;
   border-radius: 40px;
-    background: #FAF3E7;
+  background: #FAF3E7;
   background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
   background-size: 45px 45px;
 }
@@ -105,11 +99,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .container{
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   .we-will-call-you {
   }
 
@@ -161,7 +150,7 @@
     }
     .img-container2 {
       padding-top: 17px;
-      padding-left: 37px;
+      padding-left: 38px;
       padding-right: 38px;
       border-radius: 40px;
       background: #FAF3E7;
@@ -175,7 +164,7 @@
 @media screen and (min-width: 1280px) {
   .we-will-call-you{
     flex-direction: row;
-
+    justify-content: center;
   }
 
   .we-will-container{
@@ -202,9 +191,6 @@
     text-align: left;
     margin: 0;
     width: 523px;
-  }
-  .container {
-      max-width: 1280px;
   }
 
   .input-container{
