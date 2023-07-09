@@ -2,8 +2,6 @@
 }
 
 .container {
-padding-left: 20px;
-padding-right: 20px;
 }
 
 .title-hiw {
@@ -16,7 +14,6 @@ padding-right: 20px;
     flex-direction: column;
     justify-content: center;
     color: #141414;
-    
     font-family: DM Sans;
     font-size: 28px;
     font-style: normal;
@@ -29,8 +26,8 @@ padding-right: 20px;
 }
 
 .img-hiw {
-  width: 335px;
-  height: 158px; 
+  
+ padding-bottom: 20px; 
 }
 
 .paragraph-hiw {
@@ -47,7 +44,6 @@ padding-right: 20px;
 }
 
 .paragraph-hiw-text1 {
-  
    
 }
 
@@ -55,31 +51,16 @@ padding-right: 20px;
   
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
-  .title-hiw-text,
-    .img-hiw,
-    .paragraph-hiw {
-      width: 100%;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 367px) {
-  .title-hiw-text,
-    .img-hiw,
-    .paragraph-hiw {
-      width: 100%;
-    }
-}
 
 @media (min-width: 768px) {
   
+  .container {
+    max-width: unset;
+  }
   .title-hiw {
     display: flex;
   }
-  .img-hiw {
-    width: 310px;
-    height: 176px;
-  }
+  
   .title-hiw-text {
     width: 386px;
     font-size: 40px;
@@ -103,12 +84,22 @@ padding-right: 20px;
       line-height: 1.33;
   }
 
-  .paragraph-hiw-text2 {
-    width: 279px;
-      height: 72px;
-      font-size: 18px;
-        font-weight: 400;
-        line-height: 1.33;
-  }
-
 }
+
+  @media (min-width: 1280px) {
+    .title-hiw-text {
+    width: 614px;
+      font-size: 48px;
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+    
+    .title-hiw {
+      gap: 192px;
+      padding-bottom: 40px;
+    }
+
+  }
+ 
+
+
