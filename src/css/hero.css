@@ -75,13 +75,13 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 0.57;
-  letter-spacing: -0.56px;
+  letter-spacing: 0.04;
   text-transform: uppercase;
 }
 .span-revievs {
   font-size: 8px;
   font-weight: 400;
-  letter-spacing: -0.32px;
+  letter-spacing: 0.04;
   text-transform: none;
 }
 @media (min-width: 768px) {
@@ -100,13 +100,10 @@
   }
   .hero-reviews-p {
     font-size: 18px;
-    line-height: 1, 33;
-    letter-spacing: -0.72px;
   }
   .span-revievs {
     font-size: 10px;
     line-height: 1.2;
-    letter-spacing: -0.4px;
   }
 }
 @media (min-width: 1280px) {
@@ -126,12 +123,20 @@
 
   .hero-reviews-p {
     font-size: 24px;
-    letter-spacing: -0.96px;
+    letter-spacing: 0.04;
   }
+
+  .hero-reviews-p:hover,
+  .hero-reviews-p:focus {
+    color: var(--green-brand-color);
+    transition: width 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .span-revievs {
     font-size: 12px;
     line-height: 1.6px;
-    letter-spacing: -0.48px;
+    letter-spacing: 0.04;
   }
 }
 .hero-title {
@@ -139,7 +144,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -1.6px;
+  letter-spacing: 0.04;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -152,7 +157,7 @@
   .hero-title {
     font-size: 54px;
     line-height: 1.18;
-    letter-spacing: -2.16px;
+    letter-spacing: 0.04;
     margin-bottom: 16px;
   }
 }
@@ -160,7 +165,7 @@
   .hero-title {
     font-size: 64px;
     line-height: 1.17;
-    letter-spacing: -2.56px;
+    letter-spacing: 0.04;
     width: 672px;
   }
 }
@@ -173,7 +178,7 @@
 
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: -0.56px;
+  letter-spacing: 0.04;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -192,7 +197,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -0.56px;
+  letter-spacing: 0.04;
   text-transform: uppercase;
   cursor: pointer;
 
@@ -215,7 +220,7 @@
   .hero-shop-now {
     font-size: 24px;
     line-height: 1;
-    letter-spacing: -0.96px;
+    letter-spacing: 0.04;
 
     width: 114px;
     height: 114px;
@@ -224,7 +229,7 @@
 @media (min-width: 1280px) {
   .hero-shop-now {
     font-size: 28px;
-    letter-spacing: -1.12px;
+    letter-spacing: 0.04;
 
     width: 132px;
     height: 132px;
@@ -240,9 +245,6 @@
 
     border: 1px solid;
     border: 1px solid transparent;
-
-    transition: width 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .hero-shop-now-div {
@@ -276,7 +278,7 @@
     width: 341.032px;
     height: 513px;
 
-    margin-bottom: 0px;
+    margin-bottom: 64px;
   }
 }
 .hero-main-img-div {
@@ -299,7 +301,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) /* rotate(105deg)*/;
+  transform: translate(-50%, -50%);
   width: 230px;
   height: 228px;
   z-index: 2;
@@ -322,31 +324,53 @@
   height: auto;
 
   clip-path: polygon(
-    100% 0,
-    100% 76%,
-    89% 80%,
-    75% 85%,
-    58% 90%,
-    36% 95%,
-    24% 95.5%,
-    12% 92.3%,
-    0 85%,
-    0 0
+    0% 0%,
+    100% 0%,
+    100% 60.27%,
+    95.7% 77.03%,
+    80.45% 83.71%,
+    37.46% 95.5%,
+    29.5% 96%,
+    22% 95.2%,
+    19% 94.2%,
+    13.4% 92.5%,
+    7.5% 88.86%,
+    0% 84.01%
   );
+}
+@media (min-width: 768px) {
+  .hero-main-picture img {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 60.27%,
+      95.7% 77.03%,
+      80.45% 83.71%,
+      37.46% 95%,
+      29.5% 95.5%,
+      22% 95.2%,
+      19% 94.2%,
+      13.4% 92.5%,
+      7.5% 88.86%,
+      0% 84.01%
+    );
+  }
 }
 @media (min-width: 1280px) {
   .hero-main-picture img {
     clip-path: polygon(
-      100% 0,
-      100% 67%,
-      95% 73%,
-      88% 78%,
-      76% 82.5%,
-      27% 92.5%,
-      14% 89%,
-      5% 84%,
-      0 82%,
-      0 0
+      0% 0%,
+      100% 0%,
+      100% 60.27%,
+      94.1% 75.5%,
+      79% 81.71%,
+      37.46% 92%,
+      29.5% 95.5%,
+      28% 92%,
+      22% 91%,
+      20.4% 90.8%,
+      12.6% 88.3%,
+      0% 81%
     );
   }
 }
@@ -373,7 +397,7 @@
   font-size: 10px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.4px;
+  letter-spacing: 0.04;
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -395,7 +419,7 @@
 
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: -0.48px;
+    letter-spacing: 0.04;
   }
 }
 @media (min-width: 1280px) {
