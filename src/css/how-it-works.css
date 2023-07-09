@@ -1,6 +1,7 @@
-.container {
-  max-width: 375px;;
+.title-hiw {
+  margin-top: 80px;
 }
+
 
 .title-hiw-text {
     display: flex;
@@ -15,7 +16,7 @@
     letter-spacing: -0.04em;
     text-transform: uppercase;
     margin-bottom: 20px;
-   
+   width: 335px;
 }
 
 .img-hiw {
@@ -33,18 +34,22 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.04em;
+  margin-bottom: 80px;
 }
 
-
+@media (min-width: 320px) and (max-width: 374px) {
+  .title-hiw-text {
+    width: 255px;
+  }
+}
 
 @media (min-width: 768px) {
   
-  .container {
-    max-width: 768px;
-  }
+
   .title-hiw {
     display: flex;
     gap: 8px;
+    margin-top: 100px;
   }
   
   .title-hiw-text {
@@ -61,6 +66,7 @@
     gap: 20px;
     font-size: 18px;
     line-height: 1.33;
+    margin-bottom: 100px;
   }
 
  .paragraph-hiw-text1 {
@@ -82,10 +88,13 @@
     }
     
     .title-hiw {
-      gap: 192px;
+      justify-content: space-between;
       padding-bottom: 40px;
+      margin-top: 124px;
     }
-
+    .paragraph-hiw {
+      margin-bottom: 124px;
+    }
   }
  
 
