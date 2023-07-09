@@ -1,16 +1,9 @@
-.how-it-works {
-}
-
 .container {
-}
-
-.title-hiw {
-  
+  max-width: 375px;;
 }
 
 .title-hiw-text {
     display: flex;
-    width: 335px;
     flex-direction: column;
     justify-content: center;
     color: #141414;
@@ -21,13 +14,12 @@
     line-height: 1.14;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
    
 }
 
 .img-hiw {
-  
- padding-bottom: 20px; 
+ margin-bottom: 20px; 
 }
 
 .paragraph-hiw {
@@ -43,22 +35,16 @@
   letter-spacing: -0.04em;
 }
 
-.paragraph-hiw-text1 {
-   
-}
-
-.paragraph-hiw-text2 {
-  
-}
 
 
 @media (min-width: 768px) {
   
   .container {
-    max-width: unset;
+    max-width: 768px;
   }
   .title-hiw {
     display: flex;
+    gap: 8px;
   }
   
   .title-hiw-text {
@@ -66,6 +52,7 @@
     font-size: 40px;
     line-height: 1.1;
   }
+
   .paragraph-hiw {
     display: flex;
     flex-direction: row;
@@ -76,13 +63,13 @@
     line-height: 1.33;
   }
 
-  .paragraph-hiw-text1 {
-    width: 317px;
-      height: 96px;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.33;
-  }
+ .paragraph-hiw-text1 {
+   width: 317px;
+ }
+
+ .paragraph-hiw-text2 {
+  width: 279px;
+ }
 
 }
 
