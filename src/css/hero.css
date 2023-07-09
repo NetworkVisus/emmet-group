@@ -75,13 +75,13 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 0.57;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .span-revievs {
   font-size: 8px;
   font-weight: 400;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   text-transform: none;
 }
 @media (min-width: 768px) {
@@ -123,20 +123,19 @@
 
   .hero-reviews-p {
     font-size: 24px;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
   }
 
   .hero-reviews-p:hover,
   .hero-reviews-p:focus {
     color: var(--green-brand-color);
-    transition: width 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .span-revievs {
     font-size: 12px;
     line-height: 1.6px;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
   }
 }
 .hero-title {
@@ -144,7 +143,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -157,7 +156,7 @@
   .hero-title {
     font-size: 54px;
     line-height: 1.18;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     margin-bottom: 16px;
   }
 }
@@ -165,7 +164,7 @@
   .hero-title {
     font-size: 64px;
     line-height: 1.17;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     width: 672px;
   }
 }
@@ -178,7 +177,7 @@
 
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -197,7 +196,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
 
@@ -220,7 +219,7 @@
   .hero-shop-now {
     font-size: 24px;
     line-height: 1;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
 
     width: 114px;
     height: 114px;
@@ -229,7 +228,7 @@
 @media (min-width: 1280px) {
   .hero-shop-now {
     font-size: 28px;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
 
     width: 132px;
     height: 132px;
@@ -245,6 +244,7 @@
 
     border: 1px solid;
     border: 1px solid transparent;
+    transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .hero-shop-now-div {
@@ -397,7 +397,7 @@
   font-size: 10px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -419,7 +419,7 @@
 
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
   }
 }
 @media (min-width: 1280px) {
@@ -432,11 +432,8 @@
     background-color: #f9f7f4;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    border: 1px solid;
     border: 1px solid transparent;
 
-    transition: width 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
