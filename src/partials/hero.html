@@ -1,88 +1,176 @@
 <section class="hero">
   <div class="hero-container container">
-    <div class="hero-reviews">
-      <img
-        srcset="
-          ./img/hero/mobile-ecllipse-two.png    1x,
-          ./img/hero/mobile-ecllipse-two-2x.png 2x
-        "
-        src="./img/hero/mobile-ecllipse-two.png"
-        width="40"
-        height="40"
-        alt="revievs"
-        class="hero-reviews-img"
-      />
+    <div class="hero-left-div">
+      <div class="hero-reviews">
+        <picture class="hero-reviews-img">
+          <source
+            media="(min-width:768px) and (max-width:1279px) "
+            srcset="
+              ./img/hero/tablet-ecllipse-two.png    1x,
+              ./img/hero/tablet-ecllipse-two-2x.png 2x
+            "
+            width="50"
+            height="50"
+            alt="revievs"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              ./img/hero/ecllipse-two.png    1x,
+              ./img/hero/ecllipse-two-2x.png 2x
+            "
+            width="66"
+            height="66"
+            alt="revievs"
+          />
+          <img
+            media="(max-width:767px)"
+            srcset="
+              ./img/hero/mobile-ecllipse-two.png    1x,
+              ./img/hero/mobile-ecllipse-two-2x.png 2x
+            "
+            src="./img/hero/mobile-ecllipse-two.png"
+            width="40"
+            height="40"
+            alt="revievs"
+          />
+        </picture>
 
-      <img
-        srcset="
-          ./img/hero/mobile-ecllipse-three.png    1x,
-          ./img/hero/mobile-ecllipse-three-2x.png 2x
-        "
-        src="./img/hero/mobile-ecllipse-three.png"
-        width="40"
-        height="40"
-        alt="revievs"
-        class="hero-reviews-img"
-      />
+        <picture class="hero-reviews-img">
+          <source
+            media="(min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./img/hero/tablet-ecllipse-three.png    1x,
+              ./img/hero/tablet-ecllipse-three-2x.png 2x
+            "
+            width="50"
+            height="50"
+            alt="revievs"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              ./img/hero/ecllipse-three.png    1x,
+              ./img/hero/ecllipse-three-2x.png 2x
+            "
+            width="66"
+            height="66"
+            alt="revievs"
+          />
+          <img
+            srcset="
+              ./img/hero/mobile-ecllipse-three.png    1x,
+              ./img/hero/mobile-ecllipse-three-2x.png 2x
+            "
+            src="./img/hero/mobile-ecllipse-three.png"
+            width="40"
+            height="40"
+            alt="revievs"
+          />
+        </picture>
+        <picture class="hero-reviews-img">
+          <source
+            media="(min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./img/hero/tablet-ecllipse-four.png    1x,
+              ./img/hero/tablet-ecllipse-four-2x.png 2x
+            "
+            width="50"
+            height="50"
+            alt="revievs"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              ./img/hero/ecllipse-four.png    1x,
+              ./img/hero/ecllipse-four-2x.png 2x
+            "
+            width="66"
+            height="66"
+            alt="revievs"
+          />
+          <img
+            srcset="
+              ./img/hero/mobile-ecllipse-four.png    1x,
+              ./img/hero/mobile-ecllipse-four-2x.png 2x
+            "
+            src="./img/hero/mobile-ecllipse-four.png"
+            width="40"
+            height="40"
+            alt="revievs"
+          />
+        </picture>
 
-      <img
-        srcset="
-          ./img/hero/mobile-ecllipse-four.png    1x,
-          ./img/hero/mobile-ecllipse-four-2x.png 2x
-        "
-        src="./img/hero/mobile-ecllipse-four.png"
-        width="40"
-        height="40"
-        alt="revievs"
-        class="hero-reviews-img"
-      />
+        <div class="hero-reviews-img">
+          <p class="hero-reviews-p">
+            2k <span class="span-revievs">reviews</span>
+          </p>
+        </div>
+      </div>
 
-      <div class="hero-reviews-img">
-        <p class="hero-reviews-p">
-          2k <span class="span-revievs">revievs</span>
-        </p>
+      <h1 class="hero-title">
+        organic <span class="span-hero-title">vegetables</span> to your diet
+        today!
+      </h1>
+      <p class="hero-p">
+        Our expertly curated vegetable baskets are made with the freshest,
+        highest quality vegetables available. Fresh Harvest Box has got you
+        covered. Fresh, high-quality vegetables in expertly curated vegetable
+        baskets delivered to you.
+      </p>
+      <div class="hero-shop-now-div">
+        <button type="button" class="hero-shop-now" data-modal-open>
+          shop now
+        </button>
       </div>
     </div>
+    <div class="hero-right-div">
+      <div class="hero-main-img container">
+        <div class="hero-main-img-div"></div>
+        <picture class="hero-main-picture">
+          <source
+            media="(min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./img/hero/tablet-img-girl.png    1x,
+              ./img/hero/tablet-img-girl-2x.png 2x
+            "
+            width="389"
+            height="388"
+            alt="img-girl"
+            class="hero-girl"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="./img/hero/img-girl.png 1x, ./img/hero/img-girl-2x.png 2x"
+            width="422"
+            height="460"
+            alt="img-girl"
+            class="hero-girl"
+          />
+          <img
+            srcset="
+              ./img/hero/mobile-img-girl.png    1x,
+              ./img/hero/mobile-img-girl-2x.png 2x
+            "
+            src="./img/hero/mobile-img-girl.png"
+            width="230"
+            height="228"
+            alt="img-girl"
+            class="hero-girl"
+          />
+        </picture>
+      </div>
 
-    <h1 class="hero-title">
-      organic <span class="span-hero-title">vegetables</span> to your diet
-      today!
-    </h1>
-    <p class="hero-p">
-      Our expertly curated vegetable baskets are made with the freshest, highest
-      quality vegetables available. Fresh Harvest Box has got you covered.
-      Fresh, high-quality vegetables in expertly curated vegetable baskets
-      delivered to you.
-    </p>
-    <div class="hero-shop-now-div">
-      <button type="button" class="hero-shop-now" data-modal-open>
-        shop now
-      </button>
-    </div>
-
-    <div class="hero-main-img">
-      <img
-        srcset="
-          ./img/hero/mobile-img-girl.png    1x,
-          ./img/hero/mobile-img-girl-2x.png 2x
-        "
-        src="./img/hero/mobile-img-girl.png"
-        width="230"
-        height="228"
-        alt="img-girl"
-        class="hero-girl"
-      />
-    </div>
-
-    <div class="hero-button-menu">
-      <button type="button" class="hero-button-filters current">
-        #organic
-      </button>
-      <button type="button" class="hero-button-filters">#products</button>
-    </div>
-    <div class="hero-button-menu">
-      <button type="button" class="hero-button-filters">#basket</button>
-      <button type="button" class="hero-button-filters">#vegetables</button>
+      <div class="hero-button-menu">
+        <button type="button" class="hero-button-filters current">
+          #organic
+        </button>
+        <button type="button" class="hero-button-filters">#products</button>
+      </div>
+      <div class="hero-button-menu">
+        <button type="button" class="hero-button-filters">#basket</button>
+        <button type="button" class="hero-button-filters">#vegetables</button>
+      </div>
     </div>
   </div>
 </section>
