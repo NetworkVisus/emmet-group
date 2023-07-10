@@ -7,6 +7,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(46, 47, 66, 0.4);
+  
 }
 .modal {
   position: absolute;
@@ -190,6 +191,7 @@
   display: none;
 }
 
+
 @media screen and (max-width: 374px) {
   .modal {
     width: 95%;
@@ -253,15 +255,15 @@
   .textarea-form {
     height: 145px;
   }
+  
   .modal-girl {
     display: flex;
-    width: 444;
-    height: 413;
     position: absolute;
     bottom: 0;
     right: 0;
     margin-right: -154px;
   }
+  
 }
 @media screen and (min-width: 1280px) {
   .modal {
