@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+
 .we-will-container {
   display: flex;
   flex-direction: column;
@@ -96,6 +98,16 @@
 
 .img-block2{
   display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .we-will-input {
+    width: 300px;
+  }
+
+  .img-container{
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -216,9 +228,8 @@
   background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
   background-size: 45px 45px;
 }
-
-
 }
+
 
 
 
