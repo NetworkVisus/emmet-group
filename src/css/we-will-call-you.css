@@ -1,4 +1,4 @@
-.we-will-call-you {
+.we-will-call-youu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +6,7 @@
 
 
 .we-will-container {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +74,7 @@
   height: 48px;
   position: relative;
   border-radius: 100px;
-    border: 1px solid #141414;
+    border: 1px solid var(--primary-text-color);
     opacity: 0.30000001192092896;
 }
 
@@ -85,6 +86,7 @@
 
 
 .img-container {
+  margin-bottom: 80px;
   padding-top: 31px;
   border-radius: 40px;
   background: #FAF3E7;
@@ -92,28 +94,29 @@
   background-size: 45px 45px;
 }
 
+.we-will-picture {
+  width: 335px;
+}
 
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .we-will-input {
     width: 300px;
   }
-
-  .img-container{
+  .we-will-picture {
     width: 300px;
-  }
+}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .we-will-call-you {
-  }
 
   .we-will-input{
     width: 350px;
   }
   .we-will-container{
     width: 524px;
-    padding-top: 100px;
+    margin-top: 100px;
   }
 
   .we-will-title{
@@ -133,42 +136,33 @@
     margin: 0;
   }
 
-    .img-block{
-      display: none;
-    }
 
-    .img-block3{
-      display: none;
-    }
-    .img-block2 {
+
+    .img-block {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-bottom: 173px;
-    }
+    } 
   
-    .img-container{
-      display: none;
-    }
 
-    .img-container3{
-      display: none;
-    }
-    .img-container2 {
+
+    .img-container {
       padding-top: 17px;
       padding-left: 38px;
       padding-right: 38px;
-      border-radius: 40px;
-      background: #FAF3E7;
-      background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
-      background-size: 45px 45px;
+      margin-bottom: 173px;
     }
 
+
+    .we-will-picture {
+      width: 629px;
+    }
 
 }
 
 @media screen and (min-width: 1280px) {
-  .we-will-call-you{
+  .we-will-call-youu{
     flex-direction: row;
     justify-content: center;
   }
@@ -203,26 +197,23 @@
     justify-content: start;
     align-items: start;
   }
-    .img-block{
-    display: none;
-  }
 
-  .img-block2{
-    display: none;
-  }
-    .img-block3{
+    .img-block{
     display: flex;
     padding: 124px 0;
   }
 
-  .img-container3 {
-  padding-top: 37px;
-  border-radius: 40px;
-    background: #FAF3E7;
-  background-image: radial-gradient(circle at 5px 5px, rgba(161, 196, 135, 0.3) 2.7px, transparent 0);
-  background-size: 45px 45px;
+  .img-container {
+  padding: 0;
+  margin: 124px 0;
+}
+
+.we-will-picture {
+  width: 525px;
 }
 }
+
+
 
 
 
