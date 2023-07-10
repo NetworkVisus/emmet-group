@@ -92,13 +92,7 @@
   background-size: 45px 45px;
 }
 
-.img-block3{
-  display: none;
-}
 
-.img-block2{
-  display: none;
-}
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .we-will-input {
