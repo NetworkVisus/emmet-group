@@ -87,7 +87,7 @@ flex-direction: column;
             ol {
               list-style-type: none;
               counter-reset: num;
-              margin: 0 0 0 45px;
+              margin: 0 0 0 20px;
               padding: 15px 0 5px 0;
               font-size: 16px;
             }
@@ -158,7 +158,7 @@ flex-direction: column;
    .step-girl {
   max-width: 768px;
    }
-  .img {
+  .hero-girl {
     width: 350px;
     height: 446px;
     margin-top: -430px;
@@ -206,7 +206,7 @@ flex-direction: column;
   max-width: 1216px;
  
    }
-  .img {
+  .hero-girl {
     width: 434px;
     margin-top: -451px;
   }
