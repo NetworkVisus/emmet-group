@@ -38,4 +38,13 @@ body {
   font-family: 'DM Sans', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--white-color);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+  max-width: 365px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
