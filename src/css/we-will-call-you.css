@@ -24,7 +24,7 @@
   font-weight: 500;
   line-height: 28px;
   text-transform: uppercase;
-  letter-spacing: -0.96px;
+  letter-spacing: -0.04em;
 }
 
 .input-container {
@@ -45,7 +45,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: -0.56px;
+  letter-spacing: -0.04em;
   color: var(--primary-text-color);
 }
 
@@ -67,6 +67,13 @@
   border: 0;
 }
 
+.input-button:focus{
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) var(--primary-text-color);
+}
+
+.input-button:hover{
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) var(--primary-text-color);
+}
 
 .we-will-input {
   padding-left: 24px;
@@ -124,7 +131,7 @@
       font-style: normal;
       font-weight: 500;
       line-height: 44px;
-      letter-spacing: -1.6px;
+      letter-spacing: -0.04em;
       text-transform: uppercase;
   }
 
@@ -132,7 +139,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.04em;
     margin: 0;
   }
 
@@ -177,7 +184,7 @@
   .we-will-title{
     font-size: 48px;
     line-height: 50px;
-    letter-spacing: -1.92px;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     text-align: left;
     margin: 0;
@@ -187,7 +194,7 @@
   .we-will-paragraf{
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.04em;
     text-align: left;
     margin: 0;
     width: 523px;
@@ -210,6 +217,10 @@
 
 .we-will-picture {
   width: 525px;
+}
+
+.we-will-picture img {
+  max-width: none;
 }
 }
 
