@@ -11,8 +11,7 @@
 @media (min-width: 768px) {
   .steps-main-div {
     border-radius: 80px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5;
   }
 }
 
@@ -25,7 +24,7 @@
   );
   background-size: 40.2px 40.2px;
 
-  border-radius: 45px;
+  border-radius: 50px;
 }
 @media (min-width: 768px) {
   .steps-polka-dot {
@@ -42,9 +41,9 @@
     padding-right: 80px;
   }
 }
+
 .steps-h {
   margin-top: 35px;
-  color: --primary-text-color;
 
   font-size: 24px;
   font-weight: 500;
@@ -83,9 +82,15 @@
   margin-left: 19px;
   margin-right: 19px;
 }
+
 @media (min-width: 768px) {
   .steps-girl {
-    margin: 40px 0 0 0;
+    margin: 40px 0 0 -20px;
+  }
+}
+@media (min-width: 1280px) {
+  .steps-girl {
+    margin: 45px 0 0 0;
   }
 }
 /*---------------3 steps---------------*/
@@ -126,7 +131,7 @@
 @media (min-width: 768px) {
   .steps-list {
     margin-bottom: 80px;
-    margin-right: 78px;
+    margin-right: 68px;
   }
   .steps-list-li:before {
     width: 46px;
@@ -137,7 +142,6 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.04em;
-  color: var(--primary-text-color);
 
   margin-top: 0;
 
@@ -152,6 +156,9 @@
 @media (min-width: 1280px) {
   .steps-list-p {
     max-width: 289px;
+  }
+  .p-two {
+    max-width: 166px;
   }
 }
 .steps-list-li:not(:first-child) {
