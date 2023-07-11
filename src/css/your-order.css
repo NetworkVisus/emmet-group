@@ -1,3 +1,304 @@
-.your-order {
-  background-color: yellowgreen;
+.backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 98;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(46, 47, 66, 0.4);
+  
+}
+.modal {
+  position: absolute;
+  width: 335px;
+  height: 903px;
+  top: 50%;
+  left: 50%;
+  padding: 20px; 
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
+}
+.modal-btn {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text-color);
+}
+.close-svg {
+  stroke: var(--primary-text-color);
+}
+.modal-paragraph {
+  color: var(--primary-text-color);
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: start;
+}
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 40px 0;
+}
+.choice-item {
+  background: var(--primary-background-color);
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+}
+.choice-heading {
+  color: var(--primary-text-color);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+  margin-bottom: 2px;
+  text-shadow: none;
+}
+.choice-paragraph {
+  color: var(--primary-text-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-shadow: none;
+}
+.modal-checkbox {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+.check-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #A1C487;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-svg {
+  display: inline-block;
+  fill: var(--primary-background-color);
+}
+.input-check:checked + .privacy-checkbox > .check-block .check-svg {
+  fill: var(--green-brand-color);
+}
+.order-img {
+  display: block;
+}
+.modal-input {
+  margin-bottom: 14px;
+}
+.modal-input-form {
+  display: block;
+  width: 100%;
+  height: 46px;
+  border-radius: 100px;
+  border: 1px solid rgba(20, 20, 20, 0.30);
+  padding: 14px 24px;
+  background-color: transparent;
+  outline: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input-form:focus {
+  border-color: var(--primary-text-color);
+}
+.modal-input-form::placeholder {
+  color: #8a8a8a;
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-shadow: none;
+}
+.textarea-input {
+  margin-bottom: 20px;
+}
+.textarea-form {
+  display: block;
+  padding: 14px 24px;
+  width: 100%;
+  height: 132px;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 20, 20, 0.30);
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-form:focus {
+  border-color: var(--primary-text-color);
+}
+.textarea-form::placeholder {
+  color: #8a8a8a;
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-shadow: none;
+}
+.modal-submit-btn {
+  display: inline-block;
+  align-items: flex-start;
+  min-width: 92px;
+  height: 42px;
+  padding: 12px 24px;
+  margin: 0 auto;
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-shadow: none;
+  color: var(--white-color);
+  background: var(--button-orange-color);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: var(--primary-text-color);
+}
+.modal-girl {
+  display: none;
+}
+
+
+@media screen and (max-width: 374px) {
+  .modal {
+    width: 95%;
+    height: 920px;
+  }
+  .order-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: -26px;
+    width: 94px;
+    height: 78px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .order-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: -33px;
+    width: 94px;
+    height: 78px;  
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 704px;
+    height: 853px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .modal-btn {
+    right: 20px;
+    top: 20px;
+  }
+  .choice-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .choice-item {
+    padding: 14px;
+    width: calc((100% - 24px) / 3);
+  }
+  .order-img {
+    width: 172px;
+    height: 142px;
+    margin-top: 6px;
+  }
+  .choice-heading {
+    padding-top: 26px;
+  }
+  .form {
+    width: 360px;
+  }
+  .input-form {
+    height: 48px;
+  }
+  .textarea-form {
+    height: 145px;
+  }
+  
+  .modal-girl {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: -154px;
+  }
+  
+}
+@media screen and (min-width: 1280px) {
+  .modal {
+    width: 891px;
+    height: 911px;
+  }
+  .modal-btn {
+    right: 20px;
+    top: 20px;
+  }
+  .order-img {
+    width: 243px;
+    height: 200px;
+  }
+  .choice-list {
+    gap: 20px;
+  }
+  .choice-item {
+    padding: 14px 7px;
+    width: calc((100% - 40px) / 3);
+  }
+  .choice-heading {
+    font-size: 24px;
+    padding-top: 26px;
+    padding-left: 13px;
+  }
+  .choice-paragraph {
+    padding-left: 13px;
+  }
+  .modal-girl {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
