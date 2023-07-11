@@ -3,7 +3,6 @@
 }
 
 .steps-main-div {
-  font-family: DM Sans;
   border-radius: 40px;
   background-color: var(--primary-background-color);
   padding: 5px 20px 0px 20px;
@@ -11,7 +10,6 @@
 @media (min-width: 768px) {
   .steps-main-div {
     border-radius: 80px;
-    padding-left: 5;
   }
   .three-steps {
     margin-bottom: 101px;
