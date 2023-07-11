@@ -1,5 +1,5 @@
-const headerBurger = document.querySelector('.header__burger');
-const headerMenu = document.querySelector('.header__menu');
+const headerBurger = document.querySelector('.header-burger');
+const headerMenu = document.querySelector('.header-menu');
 const body = document.querySelector('body');
 
 headerBurger.addEventListener('click', () => {
