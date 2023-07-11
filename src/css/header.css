@@ -119,10 +119,6 @@ body {
     overflow: hidden;
   }
 
-  .container {
-    padding: 0px 20px;
-  }
-
   .header-burger {
     display: block;
     position: relative;
