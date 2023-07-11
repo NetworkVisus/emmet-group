@@ -13,6 +13,9 @@
     border-radius: 80px;
     padding-left: 5;
   }
+  .three-steps {
+    margin-bottom: 101px;
+  }
 }
 
 .steps-polka-dot {
@@ -39,6 +42,9 @@
   .steps-polka-dot {
     padding-left: 80px;
     padding-right: 80px;
+  }
+  .three-steps {
+    margin-bottom: 124px;
   }
 }
 
