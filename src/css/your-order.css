@@ -204,7 +204,7 @@
 
 @media screen and (max-width: 374px) {
   .modal {
-    width: 95%;
+    width: 90%;
     height: 95%;
   }
   .order-img {
