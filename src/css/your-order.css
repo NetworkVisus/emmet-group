@@ -290,6 +290,7 @@
     width: calc((100% - 40px) / 3);
   }
   .choice-heading {
+    font-size: 24px;
     padding-top: 26px;
     padding-left: 13px;
   }
