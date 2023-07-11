@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/emmet-group/assets/index-ae3796fd.js"></script>
-    <link rel="stylesheet" href="/emmet-group/assets/index-2d0a7025.css">
+    <script type="module" crossorigin src="/emmet-group/assets/index-e5d5e5a4.js"></script>
+    <link rel="stylesheet" href="/emmet-group/assets/index-847b515d.css">
   </head>
   <body>
     <header class="header">
@@ -293,10 +293,233 @@
   </div>
 </footer>
 
-    <section class="your-order">
-  <h1>YOUR ORDER</h1>
-</section>
-
+    
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-btn" data-modal-close>
+      <svg class="close-svg" width="24" height="24">
+        <use href="/emmet-group/assets/icons-52763212.svg#icon-exit"></use>
+      </svg>
+    </button>
+    <h1 class="modal-paragraph">Your Order</h1>
+    <div class="choice">
+      <ul class="choice-list list">
+        <li class="choice-item">
+          <div class="modal-checkbox">
+            <input 
+              class="input-check visually-hidden"
+              type="checkbox" 
+              name="user-choice" 
+              id="chk1"
+              value="true"/>
+            <label class="privacy-checkbox" for="chk1">
+              <span class="check-block">
+                <svg class="check-svg" width="10" height="8">
+                  <use href="/emmet-group/assets/icons-52763212.svg#icon-check"></use>
+                </svg>
+                </span>
+            </label>
+          </div>
+          <h3 class="choice-heading">Cabbage Basket</h3>
+          <p class="choice-paragraph">Plant</p>
+          <picture class="order-img">
+            <source
+            media="(min-width:1280px)"
+            srcset="/emmet-group/assets/cabbage-688d9370.png 1x, /emmet-group/assets/cabbage@2x-4ffc49c7.png 2x"
+            width="243"
+            height="200"
+            />
+            <source
+            media="(min-width:768px) and (max-width:1279px)"
+            srcset="/emmet-group/assets/tablet-cabbage-fe75e0c4.png 1x, /emmet-group/assets/tablet-cabbage@2x-57615b9f.png 2x"
+            width="172"
+            height="142"
+            />
+            <source
+            media="(min-width:375px)"
+            srcset="/emmet-group/assets/mob-cabbage-1b239671.png 1x, /emmet-group/assets/mob-cabbage@2x-e7fc6ef0.png 2x"
+            width="94"
+            height="78"
+            />
+            <source
+            media="(max-width:374px)"
+            srcset="/emmet-group/assets/mob-cabbage-1b239671.png 1x, /emmet-group/assets/mob-cabbage@2x-e7fc6ef0.png 2x"
+            width="94"
+            height="78"
+            />
+          <img class="order-img" 
+            src="/emmet-group/assets/mob-cabbage-1b239671.png" 
+            srcset="/emmet-group/assets/mob-cabbage-1b239671.png 1x, /emmet-group/assets/mob-cabbage@2x-e7fc6ef0.png 2x"
+            width="94"
+            height="78"
+            alt="cabbage"
+            />
+        </picture>    
+        </li>
+        <li class="choice-item">
+          <div class="modal-checkbox">
+            <input 
+              class="input-check visually-hidden"
+              type="checkbox" 
+              name="user-choice" 
+              id="chk2" 
+              value="true"/>
+            <label class="privacy-checkbox" for="chk2">
+              <span class="check-block">
+                <svg class="check-svg" width="10" height="8">
+                  <use href="/emmet-group/assets/icons-52763212.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        <h3 class="choice-heading">Tomato Basket</h3>
+        <p class="choice-paragraph">Plant</p>
+        <picture class="order-img">
+          <source
+          media="(min-width:1280px)"
+          srcset="/emmet-group/assets/tomato-620dbb6e.png 1x, /emmet-group/assets/tomato@2x-3079bbbd.png 2x"
+          width="243"
+          height="200"
+          />
+          <source
+          media="(min-width:768px) and (max-width:1279px)"
+          srcset="/emmet-group/assets/tablet-tomato-1a981d89.png 1x, /emmet-group/assets/tablet-tomato@2x-a418ba1e.png 2x"
+          width="172"
+          height="142"
+          />
+          <source
+          media="(min-width:375px)"
+          srcset="/emmet-group/assets/mob-tomato-dd8e4804.png 1x, /emmet-group/assets/mob-tomato@2x-9d76683f.png 2x"
+          width="94"
+          height="78"
+          />
+          <source
+          media="(max-width:374px)"
+          srcset="/emmet-group/assets/mob-tomato-dd8e4804.png 1x, /emmet-group/assets/mob-tomato@2x-9d76683f.png 2x"
+          width="94"
+          height="78"
+          />
+        <img class="order-img" 
+          src="/emmet-group/assets/mob-tomato-dd8e4804.png" 
+          srcset="/emmet-group/assets/mob-tomato-dd8e4804.png 1x, /emmet-group/assets/mob-tomato@2x-9d76683f.png 2x"
+          width="94"
+          height="78"
+          alt="tomato"
+          />
+        </picture> 
+        </li>
+        <li class="choice-item">
+          <div class="modal-checkbox">
+            <input 
+              class="input-check visually-hidden"
+              type="checkbox" 
+              name="user-choice" 
+              id="chk3"
+              value="true"/>
+            <label class="privacy-checkbox" for="chk3">
+              <span class="check-block">
+                <svg class="check-svg" width="10" height="8">
+                  <use href="../img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <h3 class="choice-heading">Vegetables Basket</h3>
+          <p class="choice-paragraph">Plant</p>
+          <picture class="order-img">
+            <source
+            media="(min-width:1280px)"
+            srcset="/emmet-group/assets/vegetables-c7484214.png 1x, /emmet-group/assets/vegetables@2x-0c255908.png 2x"
+            width="243"
+            height="200"
+            />
+            <source
+            media="(min-width:768px) and (max-width:1279px)"
+            srcset="/emmet-group/assets/tablet-vegetables-a7d0b4a0.png 1x, /emmet-group/assets/tablet-vegetables@2x-df139a9b.png 2x"
+            width="172"
+            height="142"
+            />
+            <source
+            media="(min-width:375px)"
+            srcset="/emmet-group/assets/mob-vegetables-b0b2b450.png 1x, /emmet-group/assets/mob-vegetables@2x-0db53ce1.png 2x"
+            width="94"
+            height="78"
+            />
+            <source
+            media="(max-width:374px)"
+            srcset="/emmet-group/assets/mob-vegetables-b0b2b450.png 1x, /emmet-group/assets/mob-vegetables@2x-0db53ce1.png 2x"
+            width="94"
+            height="78"
+            />
+          <img class="order-img" 
+            src="/emmet-group/assets/mob-vegetables-b0b2b450.png" 
+            srcset="/emmet-group/assets/mob-vegetables-b0b2b450.png 1x, /emmet-group/assets/mob-vegetables@2x-0db53ce1.png 2x"
+            width="94"
+            height="78"
+            alt="vegetables"
+            />
+          </picture> 
+        </li>
+      </ul>
+    </div>
+    <form class="form" name="contacts-form" autocomplete="off">
+      <div class="modal-input">
+        <label class="lable-form" for="user-name"></label>
+          <div class="input-info">
+            <input class="modal-input-form name-form"
+              type="text" 
+              pattern="[^0-9]*" 
+              title="Будь ласка, введіть правильне ім'я" required
+              name="user-name" 
+              id="user-name"
+              placeholder="Enter full name..."
+              />
+          </div>
+      </div>       
+      <div class="modal-input">
+        <label class="lable-form" for="user-email"></label>
+          <div class="input-info">
+            <input class="modal-input-form email-form"
+              type="email" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+              title="Будь ласка, введіть електронну пошту" required
+              name="user-email" 
+              id="user-email"
+              placeholder="Enter email..."
+              />
+          </div>
+      </div>       
+      <div class="modal-input">
+        <label class="lable-form" for="user-card"></label>
+          <div class="input-info">
+            <input class="modal-input-form"
+              type="text" 
+              name="user-card" 
+              id="user-card"
+              placeholder="Enter card.."
+              />
+          </div>
+      </div>
+      <div class="textarea-input">
+        <label class="lable-form" for="user-comment"></label>
+          <textarea
+            class="textarea-form"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter comments..."
+          ></textarea>
+      </div>
+      <button class="modal-submit-btn" type="submit">Submit</button>
+    </form>
+    <img class="modal-girl" 
+      src="/emmet-group/assets/tablet-modal-girl-235c8b31.png" 
+      srcset="/emmet-group/assets/modal-girl-f067ec92.png 1x, /emmet-group/assets/modal-girl@2x-be2c19cd.png 2x"
+              width="444"
+              height="413"
+              alt="girl"
+              />
+  </div>
+</div>
     
   </body>
 </html>
