@@ -441,3 +441,9 @@
     border: 1px solid transparent;
   }
 }
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 98px;
+  }
+}
