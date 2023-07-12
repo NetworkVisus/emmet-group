@@ -256,6 +256,10 @@ body {
     display: block;
     margin: 0 auto;
   }
+  .header {
+    position: fixed;
+    background-color: var(--white-color);
+  }
 }
 
 /* Tablet */
@@ -281,6 +285,10 @@ body {
     stroke: #77ac63;
     fill: transparent;
     transition: all 0.2s;
+  }
+  .header {
+    position: absolute;
+    position: relative;
   }
 }
 
