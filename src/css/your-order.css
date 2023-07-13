@@ -233,7 +233,7 @@
     height: 853px;
     padding: 40px;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
   }
   .modal-btn {
     right: 20px;
